@@ -1,0 +1,27 @@
+window {
+    background-color: rgba(26, 27, 38, 0.85); /* Твой @bg с прозрачностью */
+}
+
+button {
+    background-color: #24283b;
+    color: #c0caf5;
+    border: 2px solid #7aa2f7;
+    border-radius: 10px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+    background-color: #bb9af7;
+    outline-style: none;
+}
+
+/* Иконки для кнопок (укажи правильные пути) */
+#lock { background-image: url("/usr/share/wlogout/icons/lock.png"); }
+#logout { background-image: url("/usr/share/wlogout/icons/logout.png"); }
+#suspend { background-image: url("/usr/share/wlogout/icons/suspend.png"); }
+#hibernate { background-image: url("/usr/share/wlogout/icons/hibernate.png"); }
+#shutdown { background-image: url("/usr/share/wlogout/icons/shutdown.png"); }
+#reboot { background-image: url("/usr/share/wlogout/icons/reboot.png"); }

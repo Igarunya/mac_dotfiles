@@ -1,0 +1,69 @@
+[[mgr.prepend_keymap]]
+on  = "M"
+run = "plugin mount"
+
+[[mgr.prepend_keymap]]
+on   = [ "R","b" ]
+run  = "plugin recycle-bin"
+desc = "Trash"
+
+[[manager.prepend_keymap]]
+on   = [ "!" ]
+exec = 'shell "foot"'
+desc = "Открыть foot в текущей папке"
+
+[[manager.prepend_keymap]]
+on   = [ "!" ]
+run  = 'shell "/usr/bin/bash" --block'
+desc = "Открыть Bash"
+
+[[manager.prepend_keymap]]
+on   = [ "g", "f" ] # hotkey 'go-free'
+run  = 'shell "/usr/bin/df -h . && read" --block'
+desc = "Показать свободное место"
+
+[[mgr.prepend_keymap]]
+on   = [ "c", "m" ]
+run  = "plugin chmod"
+desc = "Chmod on selected files"
+
+[[mgr.prepend_keymap]]
+on = [ "P", "s" ]
+run = "plugin projects save"
+desc = "Save current project"
+
+[[mgr.prepend_keymap]]
+on = [ "P", "l" ]
+run = "plugin projects load"
+desc = "Load project"
+
+[[mgr.prepend_keymap]]
+on = [ "P", "P" ]
+run = "plugin projects load_last"
+desc = "Load last project"
+
+[[mgr.prepend_keymap]]
+on = [ "P", "d" ]
+run = "plugin projects delete"
+desc = "Delete project"
+
+[[mgr.prepend_keymap]]
+on = [ "P", "D" ]
+run = "plugin projects delete_all"
+desc = "Delete all projects"
+
+[[mgr.prepend_keymap]]
+on = [ "P", "m" ]
+run = "plugin projects 'merge current'"
+desc = "Merge current tab to other projects"
+
+[[mgr.prepend_keymap]]
+on = [ "P", "M" ]
+run = "plugin projects 'merge all'"
+desc = "Merge current project to other projects"
+
+[[mgr.prepend_keymap]]
+on = ["C"]
+run = "plugin ouch"
+desc = "Compress with ouch"
+
