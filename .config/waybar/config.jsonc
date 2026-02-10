@@ -17,6 +17,8 @@
 
     "modules-right": [
         "custom/sep",
+        "custom/mail",
+        "custom/sep",
         "battery",
         "custom/sep",
         "network",
@@ -91,22 +93,26 @@
     },
     "custom/sep": {
         "format" : "|",
-        "interval" : 0
+        "interval" : 10
     },
     "hyprland/language": {
     "format": "{}",
     "format-en": "US",
-    "format-ru": "RU"
+    "format-ru": "RU",
+    "min-length": 2
     },
-    //"custom/power": {
-    //"format": "⏻",
-    //"on-click": "wlogout",
-    //"tooltip": false
-    //}
     "custom/power": {
     "format": "",
     "on-click": "wlogout",
     "on-click-right": "hyprctl dispatch exit", // ПКМ — быстрый выход из гипера
     "tooltip": false
-}
+},
+"custom/mail": {
+        "format": "  {}",
+        "exec": "~/.local/bin/check_mail.sh",
+        "interval": 60,
+        "timeout": 10,
+        "on-click": "thunderbird -e aerc",
+        "tooltip": false
+    }
 }

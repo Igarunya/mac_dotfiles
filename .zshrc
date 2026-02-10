@@ -117,6 +117,7 @@ alias ac='audioconverter_translit.sh'
 source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"
 
-
-
 export PATH="$HOME/scripts:$PATH"
+
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh

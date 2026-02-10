@@ -60,6 +60,12 @@ button:hover {
     color: @white;
 }
 
+/*#workspaces, #window, #battery, #network, #cpu, #memory, #disk, #clock {
+    margin: 0 4px;
+    padding: 0 4px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}*/
+
 #custom-sep {
     color: @brblk;
 }
@@ -108,10 +114,30 @@ button:hover {
     border-bottom: 4px solid @mag;
     margin: 0 0px;
 }
+
 #custom-power {
     color: @red;
     /*padding: 0 4px;*/
     margin: 0 4px 0 0;
     border-bottom: none; /* Убираем полоску */
     font-size: 12px;     /* Сделаем иконку чуть крупнее */
+}
+
+#custom-mail {
+    color: @ylw; /* Приятный голубой цвет иконки */
+    border-bottom: 4px solid @ylw;
+}
+
+/* Эффект, если писем больше нуля */
+#custom-mail.unread {
+    color: #ebcb8b; /* Желтый/золотистый цвет, когда есть почта */
+    font-weight: bold;
+}
+
+#custom-poshta {
+    color: #ffcc00; /* Желтый цвет Укрпочты */
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+    font-size: 14px;
 }

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/igarunya/.config/waybar'
+let g:netrw_dirhist_3='/home/igarunya/Documents'
+let g:netrw_dirhist_2='/home/igarunya/.config/waybar'
+let g:netrw_dirhist_1='/home/igarunya/.config/waybar/scripts'
+let g:netrw_dirhist_0='/home/igarunya/.config/waybar'
+let g:netrw_dirhist_9='/home/igarunya/.config/hypr'
+let g:netrw_dirhist_8='/home/igarunya/.config'
+let g:netrw_dirhist_7='/home/igarunya'
+let g:netrw_dirhist_6='/home/igarunya/.config/waybar'
+let g:netrw_dirhist_5='/home/igarunya/.config'
